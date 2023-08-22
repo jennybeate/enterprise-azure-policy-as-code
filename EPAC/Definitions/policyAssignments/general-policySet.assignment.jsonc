@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
   "nodeName": "/Global/",
-  "parameterFile": "global-policySet.parameters.csv",
+  "parameterFile": "general-policySet.parameters.csv",
   "definitionEntryList": [
     {
       "policySetName": "e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679",
@@ -11,24 +11,7 @@
           "append": true,
           "displayName": "Global policyset/initiative for general policies",
           "description": "General policies for the entire OTG platform",
-          "overrides": [ ///Will only be used if there is no parameterized effect in the parameter file
-            {
-                "policySetId": "/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679",
-                "kind": "policyEffect",
-                "value": "Audit",
-                "selectors": [
-                    {
-                        "kind": "policyDefinitionReferenceId",
-                        "in": [
-                            "allowed-locations-resources",
-                            "allowed-locations-resource-groups",
-                            "naming-convention",
-                            "append-rg-createdDate"
-                        ]
-                    }
-                ]
-            }
-          ]
+          
           },
           "nonComplianceMessages": [
             {

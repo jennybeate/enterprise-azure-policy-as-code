@@ -4,7 +4,7 @@
   //"parameterFile":"Initiative7-parameters.csv", 
   "definitionEntry": {
       "policySetName": "e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671", //custom Policy managed by EPAC. Use resource id for built in policies. Specifying just the name allows EPAC to inject the correct definition scope.
-       "displayName": "Sandbox control assignment" //Not required
+       "displayName": "Sandbox control assignment initiative" //Not required
       }, 
   //"enforcementMode": "Default", //Default or DoNotEnforce. Not required
   "assignment": {
@@ -28,10 +28,10 @@
                     }
                 ]
             }
-          ],
-          "parameters": {
-            "effect":"Audit"
-          }
+  ],
+  "parameters": {
+        "effect":"Disabled"
+        }      
   },
   "nonComplianceMessages": [
             {

@@ -1,8 +1,10 @@
 parameters:
   - name: serviceConnection
     type: string
+    default: Nimtech-Test (6330d75b-fd04-4421-9aeb-a521847d4b23)
   - name: pacEnvironment
     type: string
+    default: epac-dev2
   - name: definitionsRootFolder
     type: string
     default: Definitions

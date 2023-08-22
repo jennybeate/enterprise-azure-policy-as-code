@@ -2,30 +2,6 @@
   "assignments": {
     "replace": {},
     "update": {
-      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/sandbox-": {
-        "enforcementMode": "Default",
-        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671",
-        "identity": {
-          "type": "None"
-        },
-        "description": "Policy set that sets guardrails for sandbox. Tags resources for deletion and denies the creation of vNet peerings within the sandbox subscription or in other subscriptions, when deploying from a sandbox scope.",
-        "identityRequired": false,
-        "displayName": "Sandbox guardrail policySet",
-        "nonComplianceMessages": [
-          {
-            "message": "Creating vNet peering in this scope/subscription is not allowed."
-          }
-        ],
-        "name": "sandbox-",
-        "metadata": {
-          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
-        },
-        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/sandbox-",
-        "scope": "/providers/Microsoft.Management/managementGroups/test",
-        "notScopes": [
-          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
-        ]
-      },
       "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-general-": {
         "overrides": [
           {
@@ -33,7 +9,6 @@
               {
                 "kind": "policyDefinitionReferenceId",
                 "in": [
-                  "allowed-locations-resource-groups",
                   "naming-convention"
                 ]
               }
@@ -47,6 +22,7 @@
                 "kind": "policyDefinitionReferenceId",
                 "in": [
                   "allowed-locations-resources",
+                  "allowed-locations-resource-groups",
                   "append-rg-createdDate"
                 ]
               }
@@ -79,8 +55,8 @@
         ]
       }
     },
-    "numberOfChanges": 2,
-    "numberUnchanged": 0,
+    "numberOfChanges": 1,
+    "numberUnchanged": 1,
     "delete": {},
     "new": {}
   },
@@ -101,7 +77,7 @@
     "delete": {},
     "new": {}
   },
-  "createdOn": "2023-08-22 06:07:36Z",
+  "createdOn": "2023-08-22 06:42:31Z",
   "exemptions": {
     "numberOfOrphans": 0,
     "replace": {},
