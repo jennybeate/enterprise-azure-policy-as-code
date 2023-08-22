@@ -1,0 +1,24 @@
+ 
+  
+{ //schema deviates from example given on their webpage.."$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-exemption-schema.json",
+   "exemptions": [
+        {
+            "name": "Uniquename",
+            "displayName": "Descriptive exception name displayed on portal",
+            "description": "More details",
+            "exemptionCategory": "waiver",
+            "scope": "/subscriptions/managementGroups/Epac-Dev2",
+            "policyAssignmentId": "/providers/microsoft.management/managementgroups/epav-Dev2/providers/microsoft.authorization/policyassignments/pr-glob-",
+            "policyDefinitionReferenceIds": [
+                "naming-convention"
+            ],
+            "metadata": {
+                "custom": "value"
+            },
+            "assignmentScopeValidation": "Default",
+            "resourceSelectors": [
+              // see Microsoft documentation for details
+            ]
+        }
+    ]
+}

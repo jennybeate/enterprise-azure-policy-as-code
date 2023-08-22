@@ -1,0 +1,45 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/global-settings-schema.json",
+    "pacOwnerId": "11111111-2222-3333-4444-555555555555",
+    "pacEnvironments": [
+        {
+            "pacSelector": "EPAC-Dev2",
+            "cloud": "AzureCloud",
+            "tenantId": "ecabee7b-8606-4ae2-9f69-d63203bc23d5",
+            "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/policytest",
+            "inheritedDefinitionsScopes": [], // [optional] inherited definition scopes used but not managed by this repository, scopes must be visible from deploymentScope
+            "desiredState": { // [optional]
+                "strategy": "full", // default full
+                // full      = delete any unknown assignments and Policy/Set definitions in managed scope not containing metadata.pacOwnerId
+                // ownedOnly = delete only our own assignments as indicated by metadata.pacOwnerId field
+                "includeResourceGroups": false,
+                "excludedScopes": [
+                    // Management Groups
+                    // Subscriptions
+                    // Resource Groups
+                ],
+                "excludedPolicyDefinitions": [
+                    // wild cards allowed
+                ],
+                "excludedPolicySetDefinitions": [
+                    // wild cards allowed
+                ],
+                "excludedPolicyAssignments": [
+                    // wild cards allowed
+                ]
+            }
+        }
+        
+    ],
+    "managedIdentityLocations": {
+        "*": "norwayeast"
+    }//,
+    //"globalNotScopes": {
+        //"*": [
+         //   "/resourceGroupPatterns/excluded-rg*",
+       // ],
+        //"tenant": [
+          //  "/providers/Microsoft.Management/managementGroups/policytest"
+        //]
+    //}
+}

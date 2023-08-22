@@ -1,0 +1,61 @@
+{
+    
+  "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-set-definition-schema.json",
+  "name": "e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671",//newly created GUID
+    "type": "Microsoft.Authorization/policySetDefinitions",
+    "properties":{
+        "displayName": "Sandbox initiative",
+        "description": "Security controls for sandbox, such as denial of vnet creation.",
+          "metadata": {
+            "version": "1.0.2",
+            "category": "Sandbox"
+          },
+        "parameters": {
+            "effect": {
+                "type": "string",
+                "allowedValues": [
+                  "Audit",
+                  "Deny",
+                  "Disabled"
+              ],
+                "defaultValue": "Disabled",
+                  "metadata": {
+                    "displayName": "Effect",
+                    "description": "Enable or disable the execution of the policy"
+                  }
+          }
+        },
+        "policyDefinitions": [
+          {
+            "policyDefinitionReferenceId": "Deny-VNET-Peer-Cross-Sub",
+            "policyDefinitionName": "2cc2cbfc-e306-4ec6-a141-eea3c79bb2a3",
+            "parameters": {
+              "effect": {
+                "value": "[parameters('effect')]"
+              }
+            }
+          },
+          {
+            "policyDefinitionReferenceId": "Deny-VNET-Peering",
+            "policyDefinitionName": "1cc2cbfc-e306-4ec6-a141-eea3c79bb2a4",
+            "parameters": {
+              "Effect": {
+                "value": "[parameters('effect')]"
+              }
+            }
+          
+          },
+          {
+            "policyDefinitionReferenceId": "append-rg-deleteDate",
+            "policyDefinitionName": "9b749cc6-f27e-4416-a661-c237976b5c9b",
+            "parameters": {
+              "Effect": {
+                "value": "[parameters('effect')]"
+              }
+            }
+          
+          }
+        ]
+      }
+  }
+  

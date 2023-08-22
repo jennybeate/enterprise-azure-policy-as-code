@@ -1,0 +1,1227 @@
+{
+  "parameters": {
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // API Management -- API Management services should use a virtual network
+    //   Microsoft cloud security benchmark: Audit (aPIManagementServicesShouldUseAVirtualNetworkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "aPIManagementServicesShouldUseAVirtualNetworkMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "aPIManagementServicesShouldUseAVirtualNetworkEvaluatedSkuNames": ["Developer","Premium"], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Configuration -- App Configuration should use private link
+    //   Microsoft cloud security benchmark: AuditIfNotExists (appConfigurationShouldUsePrivateLinkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "appConfigurationShouldUsePrivateLinkMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Platform -- Azure Spring Cloud should use network injection
+    //   Microsoft cloud security benchmark: Audit (azureSpringCloudShouldUseNetworkInjectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureSpringCloudShouldUseNetworkInjectionMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- App Service apps should have 'Client Certificates (Incoming client certificates)' enabled
+    //   Microsoft cloud security benchmark: Audit (ensureWEBAppHasClientCertificatesIncomingClientCertificatesSetToOnMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "ensureWEBAppHasClientCertificatesIncomingClientCertificatesSetToOnMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- App Service apps should have remote debugging turned off
+    //   Microsoft cloud security benchmark: AuditIfNotExists (webAppDisableRemoteDebuggingMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "webAppDisableRemoteDebuggingMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- App Service apps should have resource logs enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticLogsInAppServicesShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticLogsInAppServicesShouldBeEnabledMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- App Service apps should not have CORS configured to allow every resource to access your apps
+    //   Microsoft cloud security benchmark: AuditIfNotExists (webAppRestrictCORSAccessMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "webAppRestrictCORSAccessMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- App Service apps should only be accessible over HTTPS
+    //   Microsoft cloud security benchmark: Audit (webAppEnforceHttpsMonitoringEffectV2)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "webAppEnforceHttpsMonitoringEffectV2": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- App Service apps should require FTPS only
+    //   Microsoft cloud security benchmark: AuditIfNotExists (fTPSShouldBeRequiredInYourWebAppMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "fTPSShouldBeRequiredInYourWebAppMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- App Service apps should use managed identity
+    //   Microsoft cloud security benchmark: AuditIfNotExists (managedIdentityShouldBeUsedInYourWebAppMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "managedIdentityShouldBeUsedInYourWebAppMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- App Service apps should use the latest TLS version
+    //   Microsoft cloud security benchmark: AuditIfNotExists (latestTLSVersionShouldBeUsedInYourWebAppMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "latestTLSVersionShouldBeUsedInYourWebAppMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- Function apps should have 'Client Certificates (Incoming client certificates)' enabled
+    //   Microsoft cloud security benchmark: Audit (functionAppsShouldHaveClientCertificatesEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "functionAppsShouldHaveClientCertificatesEnabledMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- Function apps should have remote debugging turned off
+    //   Microsoft cloud security benchmark: AuditIfNotExists (functionAppDisableRemoteDebuggingMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "functionAppDisableRemoteDebuggingMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- Function apps should not have CORS configured to allow every resource to access your apps
+    //   Microsoft cloud security benchmark: AuditIfNotExists (functionAppRestrictCORSAccessMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "functionAppRestrictCORSAccessMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- Function apps should only be accessible over HTTPS
+    //   Microsoft cloud security benchmark: Audit (functionAppEnforceHttpsMonitoringEffectV2)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "functionAppEnforceHttpsMonitoringEffectV2": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- Function apps should require FTPS only
+    //   Microsoft cloud security benchmark: AuditIfNotExists (fTPSOnlyShouldBeRequiredInYourFunctionAppMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "fTPSOnlyShouldBeRequiredInYourFunctionAppMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- Function apps should use managed identity
+    //   Microsoft cloud security benchmark: AuditIfNotExists (managedIdentityShouldBeUsedInYourFunctionAppMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "managedIdentityShouldBeUsedInYourFunctionAppMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // App Service -- Function apps should use the latest TLS version
+    //   Microsoft cloud security benchmark: AuditIfNotExists (latestTLSVersionShouldBeUsedInYourFunctionAppMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "latestTLSVersionShouldBeUsedInYourFunctionAppMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Automation -- Automation account variables should be encrypted
+    //   Microsoft cloud security benchmark: Audit (encryptionOfAutomationAccountMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "encryptionOfAutomationAccountMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Backup -- Azure Backup should be enabled for Virtual Machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (azureBackupShouldBeEnabledForVirtualMachinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureBackupShouldBeEnabledForVirtualMachinesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Batch -- Resource logs in Batch accounts should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInBatchAccountMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInBatchAccountRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInBatchAccountMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Cache -- Azure Cache for Redis should use private link
+    //   Microsoft cloud security benchmark: AuditIfNotExists (azureCacheForRedisShouldUsePrivateEndpointMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureCacheForRedisShouldUsePrivateEndpointMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Cache -- Only secure connections to your Azure Cache for Redis should be enabled
+    //   Microsoft cloud security benchmark: Audit (diagnosticsLogsInRedisCacheMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInRedisCacheMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Cognitive Services -- Cognitive Services accounts should disable public network access
+    //   Microsoft cloud security benchmark: Audit (publicNetworkAccessShouldBeDisabledForCognitiveServicesAccountsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "publicNetworkAccessShouldBeDisabledForCognitiveServicesAccountsMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Cognitive Services -- Cognitive Services accounts should enable data encryption with a customer-managed key
+    //   Microsoft cloud security benchmark: Disabled (cognitiveServicesAccountsShouldEnableDataEncryptionWithACustomerManagedKeyMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "cognitiveServicesAccountsShouldEnableDataEncryptionWithACustomerManagedKeyMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Cognitive Services -- Cognitive Services accounts should restrict network access
+    //   Microsoft cloud security benchmark: Audit (cognitiveServicesAccountsShouldRestrictNetworkAccessMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "cognitiveServicesAccountsShouldRestrictNetworkAccessMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Compute -- Virtual machines should be migrated to new Azure Resource Manager resources
+    //   Microsoft cloud security benchmark: Audit (classicComputeVMsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "classicComputeVMsMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Container Registry -- Container registries should be encrypted with a customer-managed key
+    //   Microsoft cloud security benchmark: Disabled (containerRegistriesShouldBeEncryptedWithACustomerManagedKeyMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "containerRegistriesShouldBeEncryptedWithACustomerManagedKeyMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Container Registry -- Container registries should not allow unrestricted network access
+    //   Microsoft cloud security benchmark: Audit (containerRegistriesShouldNotAllowUnrestrictedNetworkAccessMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "containerRegistriesShouldNotAllowUnrestrictedNetworkAccessMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Container Registry -- Container registries should use private link
+    //   Microsoft cloud security benchmark: Audit (containerRegistriesShouldUsePrivateLinkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "containerRegistriesShouldUsePrivateLinkMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Cosmos DB -- Azure Cosmos DB accounts should have firewall rules
+    //   Microsoft cloud security benchmark: Audit (azureCosmosDBAccountsShouldHaveFirewallRulesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureCosmosDBAccountsShouldHaveFirewallRulesMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Cosmos DB -- Azure Cosmos DB accounts should use customer-managed keys to encrypt data at rest
+    //   Microsoft cloud security benchmark: disabled (azureCosmosDbAccountsShouldUseCustomerManagedKeysToEncryptDataAtRestMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureCosmosDbAccountsShouldUseCustomerManagedKeysToEncryptDataAtRestMonitoringEffect": "disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Cosmos DB -- Cosmos DB database accounts should have local authentication methods disabled
+    //   Microsoft cloud security benchmark: Audit (azureCosmosDbAccountsShouldHaveLocalAuthenticationMethodsDisabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureCosmosDbAccountsShouldHaveLocalAuthenticationMethodsDisabledMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Data Lake -- Resource logs in Azure Data Lake Store should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInDataLakeStoreMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInDataLakeStoreRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInDataLakeStoreMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Data Lake -- Resource logs in Data Lake Analytics should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInDataLakeAnalyticsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInDataLakeAnalyticsRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInDataLakeAnalyticsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Event Grid -- Azure Event Grid domains should use private link
+    //   Microsoft cloud security benchmark: Audit (azureEventGridDomainsShouldUsePrivateLinkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureEventGridDomainsShouldUsePrivateLinkMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Event Grid -- Azure Event Grid topics should use private link
+    //   Microsoft cloud security benchmark: Audit (azureEventGridTopicsShouldUsePrivateLinkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureEventGridTopicsShouldUsePrivateLinkMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Event Hub -- Resource logs in Event Hub should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInEventHubMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInEventHubRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInEventHubMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // General -- Audit usage of custom RBAC roles
+    //   Microsoft cloud security benchmark: Audit (useRbacRulesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "useRbacRulesMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- [Preview]: Linux virtual machines should enable Azure Disk Encryption or EncryptionAtHost.
+    //   Microsoft cloud security benchmark: AuditIfNotExists (gcLinuxDiskEncryptionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "gcLinuxDiskEncryptionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- [Preview]: Windows virtual machines should enable Azure Disk Encryption or EncryptionAtHost.
+    //   Microsoft cloud security benchmark: AuditIfNotExists (gcWindowsDiskEncryptionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "gcWindowsDiskEncryptionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- Authentication to Linux machines should require SSH keys
+    //   Microsoft cloud security benchmark: AuditIfNotExists (authenticationToLinuxMachinesShouldRequireSSHKeysMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "authenticationToLinuxMachinesShouldRequireSSHKeysMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- Linux machines should have Log Analytics agent installed on Azure Arc
+    //   Microsoft cloud security benchmark: AuditIfNotExists (ArcLinuxMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- Linux machines should meet requirements for the Azure compute security baseline
+    //   Microsoft cloud security benchmark: AuditIfNotExists (linuxGuestConfigBaselinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "linuxGuestConfigBaselinesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- Windows Defender Exploit Guard should be enabled on your machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (windowsDefenderExploitGuardMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "windowsWebServersShouldBeConfiguredToUseSecureCommunicationProtocolsIncludeArcMachines": "true", // 'Microsoft cloud security benchmark',
+    "windowsDefenderExploitGuardMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- Windows machines should have Log Analytics agent installed on Azure Arc
+    //   Microsoft cloud security benchmark: AuditIfNotExists (ArcWindowsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- Windows machines should meet requirements of the Azure compute security baseline
+    //   Microsoft cloud security benchmark: AuditIfNotExists (windowsGuestConfigBaselinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "windowsGuestConfigBaselinesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Guest Configuration -- Windows web servers should be configured to use secure communication protocols
+    //   Microsoft cloud security benchmark: AuditIfNotExists (windowsWebServersShouldBeConfiguredToUseSecureCommunicationProtocolsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "windowsWebServersShouldBeConfiguredToUseSecureCommunicationProtocolsMinimumTLSVersion": "1.2", // 'Microsoft cloud security benchmark',
+    "windowsWebServersShouldBeConfiguredToUseSecureCommunicationProtocolsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Internet of Things -- Resource logs in IoT Hub should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInIoTHubMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInIoTHubMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInIoTHubRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Key Vault -- [Preview]: Certificates should have the specified maximum validity period
+    //   Microsoft cloud security benchmark: disabled (certificatesValidityPeriodMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "certificatesValidityPeriodInMonths": 12, // 'Microsoft cloud security benchmark',
+    "certificatesValidityPeriodMonitoringEffect": "disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Key Vault -- Azure Key Vault should have firewall enabled
+    //   Microsoft cloud security benchmark: Audit (firewallShouldBeEnabledOnKeyVaultMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "firewallShouldBeEnabledOnKeyVaultMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Key Vault -- Azure Key Vaults should use private link
+    //   Microsoft cloud security benchmark: Audit (privateEndpointShouldBeConfiguredForKeyVaultMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "privateEndpointShouldBeConfiguredForKeyVaultMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Key Vault -- Key Vault keys should have an expiration date
+    //   Microsoft cloud security benchmark: Disabled (keysExpirationSetEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "keysExpirationSetEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Key Vault -- Key Vault secrets should have an expiration date
+    //   Microsoft cloud security benchmark: Disabled (secretsExpirationSetEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "secretsExpirationSetEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Key Vault -- Key vaults should have deletion protection enabled
+    //   Microsoft cloud security benchmark: Audit (keyVaultsShouldHavePurgeProtectionEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "keyVaultsShouldHavePurgeProtectionEnabledMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Key Vault -- Key vaults should have soft delete enabled
+    //   Microsoft cloud security benchmark: Audit (keyVaultsShouldHaveSoftDeleteEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "keyVaultsShouldHaveSoftDeleteEnabledMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Key Vault -- Resource logs in Key Vault should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInKeyVaultMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInKeyVaultRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInKeyVaultMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- [Preview]: Azure Arc enabled Kubernetes clusters should have Microsoft Defender for Cloud extension installed
+    //   Microsoft cloud security benchmark: AuditIfNotExists (arcEnabledKubernetesClustersShouldHaveAzureDefendersExtensionInstalled)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "arcEnabledKubernetesClustersShouldHaveAzureDefendersExtensionInstalled": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Azure Arc enabled Kubernetes clusters should have the Azure Policy extension installed
+    //   Microsoft cloud security benchmark: AuditIfNotExists (arcEnabledKubernetesClustersShouldHaveAzurePolicyExtensionInstalledEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "arcEnabledKubernetesClustersShouldHaveAzurePolicyExtensionInstalledEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Azure Kubernetes Service clusters should have Defender profile enabled
+    //   Microsoft cloud security benchmark: Audit (azureKubernetesServiceClustersShouldHaveSecurityProfileEnabled)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureKubernetesServiceClustersShouldHaveSecurityProfileEnabled": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Azure Policy Add-on for Kubernetes service (AKS) should be installed and enabled on your clusters
+    //   Microsoft cloud security benchmark: Audit (azurePolicyAddonStatusEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azurePolicyAddonStatusEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster containers CPU and memory resource limits should not exceed the specified limits
+    //   Microsoft cloud security benchmark: Audit (memoryAndCPULimitsInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "memoryAndCPULimitsInKubernetesClusterNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "memoryAndCPULimitsInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "memoryInKubernetesClusterLimit": "64Gi", // 'Microsoft cloud security benchmark',
+    "CPUInKubernetesClusterLimit": "32", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster containers should not share host process ID or host IPC namespace
+    //   Microsoft cloud security benchmark: Audit (NoSharingSensitiveHostNamespacesInKubernetesEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "NoSharingSensitiveHostNamespacesInKubernetesEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "NoSharingSensitiveHostNamespacesInKubernetesNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster containers should only use allowed AppArmor profiles
+    //   Microsoft cloud security benchmark: Audit (AllowedAppArmorProfilesInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "AllowedAppArmorProfilesInKubernetesClusterList": ["runtime/default"], // 'Microsoft cloud security benchmark',
+    "AllowedAppArmorProfilesInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "AllowedAppArmorProfilesInKubernetesClusterNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster containers should only use allowed capabilities
+    //   Microsoft cloud security benchmark: Audit (AllowedCapabilitiesInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "AllowedCapabilitiesInKubernetesClusterList": [], // 'Microsoft cloud security benchmark',
+    "AllowedCapabilitiesInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "AllowedCapabilitiesInKubernetesClusterNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "DropCapabilitiesInKubernetesClusterList": [], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster containers should only use allowed images
+    //   Microsoft cloud security benchmark: Audit (allowedContainerImagesInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "allowedContainerImagesNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "allowedContainerImagesInKubernetesClusterRegex": "^(.+){0}$", // 'Microsoft cloud security benchmark',
+    "allowedContainerImagesInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster containers should run with a read only root file system
+    //   Microsoft cloud security benchmark: Audit (ReadOnlyRootFileSystemInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "ReadOnlyRootFileSystemInKubernetesClusterNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "ReadOnlyRootFileSystemInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster pod hostPath volumes should only use allowed host paths
+    //   Microsoft cloud security benchmark: Audit (AllowedHostPathVolumesInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "AllowedHostPathVolumesInKubernetesClusterNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "AllowedHostPathVolumesInKubernetesClusterList": {"paths":[]}, // 'Microsoft cloud security benchmark',
+    "AllowedHostPathVolumesInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster pods and containers should only run with approved user and group IDs
+    //   Microsoft cloud security benchmark: Audit (MustRunAsNonRootNamespaceEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "MustRunAsNonRootNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "MustRunAsNonRootNamespaceEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster pods should only use approved host network and port range
+    //   Microsoft cloud security benchmark: Audit (AllowedHostNetworkingAndPortsInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "AllowedHostNetworkingAndPortsInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "AllowedHostMinPortInKubernetesCluster": 0, // 'Microsoft cloud security benchmark',
+    "AllowedHostMaxPortInKubernetesCluster": 0, // 'Microsoft cloud security benchmark',
+    "AllowHostNetworkingInKubernetesCluster": false, // 'Microsoft cloud security benchmark',
+    "AllowedHostNetworkingAndPortsInKubernetesClusterNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster services should listen only on allowed ports
+    //   Microsoft cloud security benchmark: Audit (allowedServicePortsInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "allowedServicePortsInKubernetesClusterNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "allowedServicePortsInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "allowedservicePortsInKubernetesClusterPorts": ["-1"], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes cluster should not allow privileged containers
+    //   Microsoft cloud security benchmark: Audit (privilegedContainersShouldBeAvoidedEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "privilegedContainerNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "privilegedContainersShouldBeAvoidedEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "excludedImagesInKubernetesCluster": [], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes clusters should be accessible only over HTTPS
+    //   Microsoft cloud security benchmark: Audit (kubernetesClustersShouldBeAccessibleOnlyOverHTTPSMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "kubernetesClustersShouldBeAccessibleOnlyOverHTTPSExcludedNamespaces": ["kube-system","gatekeeper-system","azure-arc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "kubernetesClustersShouldBeAccessibleOnlyOverHTTPSMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes clusters should disable automounting API credentials
+    //   Microsoft cloud security benchmark: Audit (KubernetesClustersShouldDisableAutomountingAPICredentialsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "KubernetesClustersShouldDisableAutomountingAPICredentialsMonitoringNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    "KubernetesClustersShouldDisableAutomountingAPICredentialsMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes clusters should not allow container privilege escalation
+    //   Microsoft cloud security benchmark: Audit (NoPrivilegeEscalationInKubernetesClusterEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "NoPrivilegeEscalationInKubernetesClusterEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "NoPrivilegeEscalationInKubernetesClusterNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes clusters should not grant CAP_SYS_ADMIN security capabilities
+    //   Microsoft cloud security benchmark: Audit (KubernetesClustersShouldNotGrantCAPSYSADMINSecurityCapabilitiesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "KubernetesClustersShouldNotGrantCAPSYSADMINSecurityCapabilitiesMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    "KubernetesClustersShouldNotGrantCAPSYSADMINSecurityCapabilitiesMonitoringNamespaceExclusion": ["kube-system","gatekeeper-system","azure-arc","azuredefender","mdc","azure-extensions-usage-system"], // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Kubernetes clusters should not use the default namespace
+    //   Microsoft cloud security benchmark: Audit (KubernetesClustersShouldNotUseTheDefaultNamespaceMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "KubernetesClustersShouldNotUseTheDefaultNamespaceMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Kubernetes -- Resource logs in Azure Kubernetes Service should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInKubernetesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInKubernetesRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInKubernetesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Logic Apps -- Resource logs in Logic Apps should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInLogicAppsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInLogicAppsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInLogicAppsRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Machine Learning -- Azure Machine Learning workspaces should be encrypted with a customer-managed key
+    //   Microsoft cloud security benchmark: Disabled (azureMachineLearningWorkspacesShouldBeEncryptedWithACustomerManagedKeyMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureMachineLearningWorkspacesShouldBeEncryptedWithACustomerManagedKeyMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Machine Learning -- Azure Machine Learning workspaces should use private link
+    //   Microsoft cloud security benchmark: Audit (azureMachineLearningWorkspacesShouldUsePrivateLinkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureMachineLearningWorkspacesShouldUsePrivateLinkMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Monitoring -- [Preview]: Log Analytics extension should be installed on your Linux Azure Arc machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (ArcLinuxMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "ArcLinuxMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Monitoring -- [Preview]: Log Analytics extension should be installed on your Windows Azure Arc machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (ArcWindowsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "ArcWindowsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Monitoring -- [Preview]: Network traffic data collection agent should be installed on Linux virtual machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (ASCDependencyAgentAuditLinuxEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "ASCDependencyAgentAuditLinuxEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Monitoring -- [Preview]: Network traffic data collection agent should be installed on Windows virtual machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (ASCDependencyAgentAuditWindowsEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "ASCDependencyAgentAuditWindowsEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Network -- [Preview]: All Internet traffic should be routed via your deployed Azure Firewall
+    //   Microsoft cloud security benchmark: AuditIfNotExists (AzureFirewallEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "AzureFirewallEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Network -- Azure Web Application Firewall should be enabled for Azure Front Door entry-points
+    //   Microsoft cloud security benchmark: Audit (webApplicationFirewallShouldBeEnabledForAzureFrontDoorServiceServiceMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "webApplicationFirewallShouldBeEnabledForAzureFrontDoorServiceServiceMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Network -- Network Watcher should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (networkWatcherShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "networkWatcherShouldBeEnabledResourceGroupName": "NetworkWatcherRG", // 'Microsoft cloud security benchmark',
+    "networkWatcherShouldBeEnabledMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Network -- Web Application Firewall (WAF) should be enabled for Application Gateway
+    //   Microsoft cloud security benchmark: Audit (webApplicationFirewallShouldBeEnabledForApplicationGatewayMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "webApplicationFirewallShouldBeEnabledForApplicationGatewayMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Search -- Resource logs in Search services should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInSearchServiceMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInSearchServiceRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInSearchServiceMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- [Preview]: Guest Attestation extension should be installed on supported Linux virtual machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (GuestAttestationExtensionShouldBeInstalledOnSupportedLinuxVirtualMachinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "GuestAttestationExtensionShouldBeInstalledOnSupportedLinuxVirtualMachinesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- [Preview]: Guest Attestation extension should be installed on supported Linux virtual machines scale sets
+    //   Microsoft cloud security benchmark: AuditIfNotExists (GuestAttestationExtensionShouldBeInstalledOnSupportedLinuxVirtualMachinesScaleSetsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "GuestAttestationExtensionShouldBeInstalledOnSupportedLinuxVirtualMachinesScaleSetsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- [Preview]: Guest Attestation extension should be installed on supported Windows virtual machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (GuestAttestationExtensionShouldBeInstalledOnSupportedWindowsVirtualMachinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "GuestAttestationExtensionShouldBeInstalledOnSupportedWindowsVirtualMachinesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- [Preview]: Guest Attestation extension should be installed on supported Windows virtual machines scale sets
+    //   Microsoft cloud security benchmark: AuditIfNotExists (GuestAttestationExtensionShouldBeInstalledOnSupportedWindowsVirtualMachinesScaleSetsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "GuestAttestationExtensionShouldBeInstalledOnSupportedWindowsVirtualMachinesScaleSetsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- [Preview]: Linux virtual machines should use only signed and trusted boot components
+    //   Microsoft cloud security benchmark: AuditIfNotExists (LinuxVirtualMachineShouldUseSignedAndTrustedBootComponentEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "LinuxVirtualMachineShouldUseSignedAndTrustedBootComponentEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- [Preview]: Secure Boot should be enabled on supported Windows virtual machines
+    //   Microsoft cloud security benchmark: Audit (SecureBootShouldBeEnabledOnSupportedWindowsVirtualMachinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "SecureBootShouldBeEnabledOnSupportedWindowsVirtualMachinesMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- [Preview]: System updates should be installed on your machines (powered by Update Center)
+    //   Microsoft cloud security benchmark: AuditIfNotExists (systemUpdatesV2MonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "systemUpdatesV2MonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- [Preview]: vTPM should be enabled on supported virtual machines
+    //   Microsoft cloud security benchmark: Audit (VtpmShouldBeEnabledOnSupportedVirtualMachinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "VtpmShouldBeEnabledOnSupportedVirtualMachinesMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- A maximum of 3 owners should be designated for your subscription
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityDesignateLessThanOwnersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityDesignateLessThanOwnersMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- A vulnerability assessment solution should be enabled on your virtual machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (serverVulnerabilityAssessmentEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "serverVulnerabilityAssessmentEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Accounts with owner permissions on Azure resources should be MFA enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityEnableMFAForOwnerPermissionsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityEnableMFAForOwnerPermissionsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Accounts with read permissions on Azure resources should be MFA enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityEnableMFAForReadPermissionsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityEnableMFAForReadPermissionsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Accounts with write permissions on Azure resources should be MFA enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityEnableMFAForWritePermissionsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityEnableMFAForWritePermissionsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Adaptive application controls for defining safe applications should be enabled on your machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (adaptiveApplicationControlsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "adaptiveApplicationControlsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Adaptive network hardening recommendations should be applied on internet facing virtual machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (adaptiveNetworkHardeningsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "adaptiveNetworkHardeningsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- All network ports should be restricted on network security groups associated to your virtual machine
+    //   Microsoft cloud security benchmark: AuditIfNotExists (nextGenerationFirewallMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "nextGenerationFirewallMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Allowlist rules in your adaptive application control policy should be updated
+    //   Microsoft cloud security benchmark: AuditIfNotExists (adaptiveApplicationControlsUpdateMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "adaptiveApplicationControlsUpdateMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Authorized IP ranges should be defined on Kubernetes Services
+    //   Microsoft cloud security benchmark: Audit (kubernetesServiceAuthorizedIPRangesEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "kubernetesServiceAuthorizedIPRangesEnabledMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Auto provisioning of the Log Analytics agent should be enabled on your subscription
+    //   Microsoft cloud security benchmark: AuditIfNotExists (autoProvisioningOfTheLogAnalyticsAgentShouldBeEnabledOnYourSubscriptionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "autoProvisioningOfTheLogAnalyticsAgentShouldBeEnabledOnYourSubscriptionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure DDoS Protection Standard should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (vnetEnableDDoSProtectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "vnetEnableDDoSProtectionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Defender for App Service should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (appServicesAdvancedThreatProtectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "appServicesAdvancedThreatProtectionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Defender for Azure SQL Database servers should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (sqlServersAdvancedDataSecurityMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "sqlServersAdvancedDataSecurityMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Defender for DNS should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (AzureDefenderForDNSShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "AzureDefenderForDNSShouldBeEnabledMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Defender for Key Vault should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (keyVaultsAdvancedDataSecurityMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "keyVaultsAdvancedDataSecurityMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Defender for open-source relational databases should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (AzureDefenderForOpenSourceRelationalDatabasesShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "AzureDefenderForOpenSourceRelationalDatabasesShouldBeEnabledMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Defender for Resource Manager should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (AzureDefenderForResourceManagerShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "AzureDefenderForResourceManagerShouldBeEnabledMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Defender for servers should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (virtualMachinesAdvancedThreatProtectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "virtualMachinesAdvancedThreatProtectionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Defender for SQL servers on machines should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (sqlServersVirtualMachinesAdvancedDataSecurityMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "sqlServersVirtualMachinesAdvancedDataSecurityMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Azure Role-Based Access Control (RBAC) should be used on Kubernetes Services
+    //   Microsoft cloud security benchmark: Audit (kubernetesServiceRbacEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "kubernetesServiceRbacEnabledMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Blocked accounts with owner permissions on Azure resources should be removed
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityRemoveDeprecatedAccountWithOwnerPermissionsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityRemoveDeprecatedAccountWithOwnerPermissionsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Blocked accounts with read and write permissions on Azure resources should be removed
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityRemoveDeprecatedAccountMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityRemoveDeprecatedAccountMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Container registry images should have vulnerability findings resolved
+    //   Microsoft cloud security benchmark: AuditIfNotExists (containerRegistryVulnerabilityAssessmentEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "containerRegistryVulnerabilityAssessmentEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Container registry images should have vulnerability findings resolved (powered by Microsoft Defender Vulnerability Management)
+    //   Microsoft cloud security benchmark: AuditIfNotExists (azureContainerRegistryVulnerabilityAssessmentEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureContainerRegistryVulnerabilityAssessmentEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Email notification for high severity alerts should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (emailNotificationForHighSeverityAlertsShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "emailNotificationForHighSeverityAlertsShouldBeEnabledMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Email notification to subscription owner for high severity alerts should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (emailNotificationToSubscriptionOwnerForHighSeverityAlertsShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "emailNotificationToSubscriptionOwnerForHighSeverityAlertsShouldBeEnabledMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Endpoint protection health issues should be resolved on your machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (endpointProtectionHealthIssuesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "endpointProtectionHealthIssuesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Endpoint protection should be installed on your machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (installEndpointProtectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "installEndpointProtectionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Endpoint protection solution should be installed on virtual machine scale sets
+    //   Microsoft cloud security benchmark: AuditIfNotExists (vmssEndpointProtectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "vmssEndpointProtectionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Guest accounts with owner permissions on Azure resources should be removed
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityRemoveExternalAccountWithOwnerPermissionsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityRemoveExternalAccountWithOwnerPermissionsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Guest accounts with read permissions on Azure resources should be removed
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityRemoveExternalAccountWithReadPermissionsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityRemoveExternalAccountWithReadPermissionsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Guest accounts with write permissions on Azure resources should be removed
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityRemoveExternalAccountWithWritePermissionsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityRemoveExternalAccountWithWritePermissionsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Guest Configuration extension should be installed on your machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (azurePolicyforWindowsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azurePolicyforWindowsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Internet-facing virtual machines should be protected with network security groups
+    //   Microsoft cloud security benchmark: AuditIfNotExists (networkSecurityGroupsOnVirtualMachinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "networkSecurityGroupsOnVirtualMachinesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- IP Forwarding on your virtual machine should be disabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (disableIPForwardingMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "disableIPForwardingMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Log Analytics agent should be installed on your virtual machine for Azure Security Center monitoring
+    //   Microsoft cloud security benchmark: AuditIfNotExists (installLogAnalyticsAgentOnVmMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "installLogAnalyticsAgentOnVmMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Log Analytics agent should be installed on your virtual machine scale sets for Azure Security Center monitoring
+    //   Microsoft cloud security benchmark: AuditIfNotExists (installLogAnalyticsAgentOnVmssMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "installLogAnalyticsAgentOnVmssMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Management ports of virtual machines should be protected with just-in-time network access control
+    //   Microsoft cloud security benchmark: AuditIfNotExists (jitNetworkAccessMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "jitNetworkAccessMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Management ports should be closed on your virtual machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (restrictAccessToManagementPortsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "restrictAccessToManagementPortsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Microsoft Defender CSPM should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (MicrosoftDefenderCSPMShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "MicrosoftDefenderCSPMShouldBeEnabledMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Microsoft Defender for Containers should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (containersAdvancedThreatProtectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "containersAdvancedThreatProtectionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Microsoft Defender for SQL status should be protected for Arc-enabled SQL Servers
+    //   Microsoft cloud security benchmark: Audit (arcEnabledSqlServerDefenderStatusEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "arcEnabledSqlServerDefenderStatusEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Microsoft Defender for Storage (Classic) should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (storageAccountsAdvancedDataSecurityMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "storageAccountsAdvancedDataSecurityMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Monitor missing Endpoint Protection in Azure Security Center
+    //   Microsoft cloud security benchmark: AuditIfNotExists (endpointProtectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "endpointProtectionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Non-internet-facing virtual machines should be protected with network security groups
+    //   Microsoft cloud security benchmark: AuditIfNotExists (networkSecurityGroupsOnInternalVirtualMachinesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "networkSecurityGroupsOnInternalVirtualMachinesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Running container images should have vulnerability findings resolved
+    //   Microsoft cloud security benchmark: AuditIfNotExists (kubernetesRunningImagesVulnerabilityAssessmentEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "kubernetesRunningImagesVulnerabilityAssessmentEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Running container images should have vulnerability findings resolved (powered by Microsoft Defender Vulnerability Management)
+    //   Microsoft cloud security benchmark: AuditIfNotExists (kubernetesRunningImagesVulnerabilityMDVMAssessmentEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "kubernetesRunningImagesVulnerabilityMDVMAssessmentEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- SQL databases should have vulnerability findings resolved
+    //   Microsoft cloud security benchmark: AuditIfNotExists (sqlDbVulnerabilityAssesmentMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "sqlDbVulnerabilityAssesmentMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- SQL servers on machines should have vulnerability findings resolved
+    //   Microsoft cloud security benchmark: AuditIfNotExists (serverSqlDbVulnerabilityAssesmentMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "serverSqlDbVulnerabilityAssesmentMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Subnets should be associated with a Network Security Group
+    //   Microsoft cloud security benchmark: Disabled (networkSecurityGroupsOnSubnetsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "networkSecurityGroupsOnSubnetsMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Subscriptions should have a contact email address for security issues
+    //   Microsoft cloud security benchmark: AuditIfNotExists (subscriptionsShouldHaveAContactEmailAddressForSecurityIssuesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "subscriptionsShouldHaveAContactEmailAddressForSecurityIssuesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- System updates on virtual machine scale sets should be installed
+    //   Microsoft cloud security benchmark: AuditIfNotExists (vmssSystemUpdatesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "vmssSystemUpdatesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- System updates should be installed on your machines
+    //   Microsoft cloud security benchmark: AuditIfNotExists (systemUpdatesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "systemUpdatesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- There should be more than one owner assigned to your subscription
+    //   Microsoft cloud security benchmark: AuditIfNotExists (identityDesignateMoreThanOneOwnerMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "identityDesignateMoreThanOneOwnerMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Virtual machines should encrypt temp disks, caches, and data flows between Compute and Storage resources
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diskEncryptionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diskEncryptionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Virtual machines' Guest Configuration extension should be deployed with system-assigned managed identity
+    //   Microsoft cloud security benchmark: AuditIfNotExists (gcExtOnVMWithNoSAMIMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "gcExtOnVMWithNoSAMIMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Vulnerabilities in container security configurations should be remediated
+    //   Microsoft cloud security benchmark: AuditIfNotExists (containerBenchmarkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "containerBenchmarkMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Vulnerabilities in security configuration on your machines should be remediated
+    //   Microsoft cloud security benchmark: AuditIfNotExists (systemConfigurationsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "systemConfigurationsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Security Center -- Vulnerabilities in security configuration on your virtual machine scale sets should be remediated
+    //   Microsoft cloud security benchmark: AuditIfNotExists (vmssOsVulnerabilitiesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "vmssOsVulnerabilitiesMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Service Bus -- Resource logs in Service Bus should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInServiceBusMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInServiceBusRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInServiceBusMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Service Fabric -- Service Fabric clusters should have the ClusterProtectionLevel property set to EncryptAndSign
+    //   Microsoft cloud security benchmark: Audit (clusterProtectionLevelInServiceFabricMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "clusterProtectionLevelInServiceFabricMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Service Fabric -- Service Fabric clusters should only use Azure Active Directory for client authentication
+    //   Microsoft cloud security benchmark: Audit (aadAuthenticationInServiceFabricMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "aadAuthenticationInServiceFabricMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SignalR -- Azure SignalR Service should use private link
+    //   Microsoft cloud security benchmark: Audit (azureSignalRServiceShouldUsePrivateLinkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "azureSignalRServiceShouldUsePrivateLinkMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- An Azure Active Directory administrator should be provisioned for SQL servers
+    //   Microsoft cloud security benchmark: AuditIfNotExists (aadAuthenticationInSqlServerMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "aadAuthenticationInSqlServerMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Auditing on SQL server should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (sqlServerAuditingMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "sqlServerAuditingMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Azure Defender for SQL should be enabled for unprotected Azure SQL servers
+    //   Microsoft cloud security benchmark: AuditIfNotExists (sqlServerAdvancedDataSecurityMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "sqlServerAdvancedDataSecurityMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Azure Defender for SQL should be enabled for unprotected SQL Managed Instances
+    //   Microsoft cloud security benchmark: AuditIfNotExists (sqlManagedInstanceAdvancedDataSecurityMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "sqlManagedInstanceAdvancedDataSecurityMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Enforce SSL connection should be enabled for MySQL database servers
+    //   Microsoft cloud security benchmark: Audit (enforceSSLConnectionShouldBeEnabledForMysqlDatabaseServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "enforceSSLConnectionShouldBeEnabledForMysqlDatabaseServersMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Enforce SSL connection should be enabled for PostgreSQL database servers
+    //   Microsoft cloud security benchmark: Audit (enforceSSLConnectionShouldBeEnabledForPostgresqlDatabaseServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "enforceSSLConnectionShouldBeEnabledForPostgresqlDatabaseServersMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Geo-redundant backup should be enabled for Azure Database for MariaDB
+    //   Microsoft cloud security benchmark: Audit (georedundantBackupShouldBeEnabledForAzureDatabaseForMariadbMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "georedundantBackupShouldBeEnabledForAzureDatabaseForMariadbMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Geo-redundant backup should be enabled for Azure Database for MySQL
+    //   Microsoft cloud security benchmark: Audit (georedundantBackupShouldBeEnabledForAzureDatabaseForMysqlMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "georedundantBackupShouldBeEnabledForAzureDatabaseForMysqlMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Geo-redundant backup should be enabled for Azure Database for PostgreSQL
+    //   Microsoft cloud security benchmark: Audit (georedundantBackupShouldBeEnabledForAzureDatabaseForPostgresqlMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "georedundantBackupShouldBeEnabledForAzureDatabaseForPostgresqlMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- MySQL servers should use customer-managed keys to encrypt data at rest
+    //   Microsoft cloud security benchmark: Disabled (bringYourOwnKeyDataProtectionShouldBeEnabledForMySqlServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "bringYourOwnKeyDataProtectionShouldBeEnabledForMySqlServersMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- PostgreSQL servers should use customer-managed keys to encrypt data at rest
+    //   Microsoft cloud security benchmark: Disabled (bringYourOwnKeyDataProtectionShouldBeEnabledForPostgreSqlServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "bringYourOwnKeyDataProtectionShouldBeEnabledForPostgreSqlServersMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Private endpoint connections on Azure SQL Database should be enabled
+    //   Microsoft cloud security benchmark: Audit (privateEndpointConnectionsOnAzureSQLDatabaseShouldBeEnabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "privateEndpointConnectionsOnAzureSQLDatabaseShouldBeEnabledMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Private endpoint should be enabled for MariaDB servers
+    //   Microsoft cloud security benchmark: AuditIfNotExists (privateEndpointShouldBeEnabledForMariadbServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "privateEndpointShouldBeEnabledForMariadbServersMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Private endpoint should be enabled for MySQL servers
+    //   Microsoft cloud security benchmark: AuditIfNotExists (privateEndpointShouldBeEnabledForMysqlServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "privateEndpointShouldBeEnabledForMysqlServersMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Private endpoint should be enabled for PostgreSQL servers
+    //   Microsoft cloud security benchmark: AuditIfNotExists (privateEndpointShouldBeEnabledForPostgresqlServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "privateEndpointShouldBeEnabledForPostgresqlServersMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Public network access on Azure SQL Database should be disabled
+    //   Microsoft cloud security benchmark: Audit (publicNetworkAccessOnAzureSQLDatabaseShouldBeDisabledMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "publicNetworkAccessOnAzureSQLDatabaseShouldBeDisabledMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Public network access should be disabled for MariaDB servers
+    //   Microsoft cloud security benchmark: Audit (publicNetworkAccessShouldBeDisabledForMariaDbServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "publicNetworkAccessShouldBeDisabledForMariaDbServersMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Public network access should be disabled for MySQL servers
+    //   Microsoft cloud security benchmark: Audit (publicNetworkAccessShouldBeDisabledForMySqlServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "publicNetworkAccessShouldBeDisabledForMySqlServersMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Public network access should be disabled for PostgreSQL servers
+    //   Microsoft cloud security benchmark: Audit (publicNetworkAccessShouldBeDisabledForPostgreSqlServersMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "publicNetworkAccessShouldBeDisabledForPostgreSqlServersMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- SQL managed instances should use customer-managed keys to encrypt data at rest
+    //   Microsoft cloud security benchmark: Disabled (ensureManagedInstanceTDEIsEncryptedWithYourOwnKeyWithDenyMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "ensureManagedInstanceTDEIsEncryptedWithYourOwnKeyWithDenyMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- SQL servers should use customer-managed keys to encrypt data at rest
+    //   Microsoft cloud security benchmark: Disabled (ensureServerTDEIsEncryptedWithYourOwnKeyWithDenyMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "ensureServerTDEIsEncryptedWithYourOwnKeyWithDenyMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- SQL servers with auditing to storage account destination should be configured with 90 days retention or higher
+    //   Microsoft cloud security benchmark: AuditIfNotExists (sQLServersShouldBeConfiguredWithAuditingRetentionDaysGreaterThan90DaysMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "sQLServersShouldBeConfiguredWithAuditingRetentionDaysGreaterThan90DaysMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Transparent Data Encryption on SQL databases should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (sqlDbEncryptionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "sqlDbEncryptionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Vulnerability assessment should be enabled on SQL Managed Instance
+    //   Microsoft cloud security benchmark: AuditIfNotExists (vulnerabilityAssessmentOnManagedInstanceMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "vulnerabilityAssessmentOnManagedInstanceMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // SQL -- Vulnerability assessment should be enabled on your SQL servers
+    //   Microsoft cloud security benchmark: AuditIfNotExists (vulnerabilityAssessmentOnServerMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "vulnerabilityAssessmentOnServerMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Storage -- [Preview]: Storage account public access should be disallowed
+    //   Microsoft cloud security benchmark: audit (disallowPublicBlobAccessEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "disallowPublicBlobAccessEffect": "audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Storage -- Secure transfer to storage accounts should be enabled
+    //   Microsoft cloud security benchmark: Audit (secureTransferToStorageAccountMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "secureTransferToStorageAccountMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Storage -- Storage accounts should be migrated to new Azure Resource Manager resources
+    //   Microsoft cloud security benchmark: Audit (classicStorageAccountsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "classicStorageAccountsMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Storage -- Storage accounts should restrict network access
+    //   Microsoft cloud security benchmark: Disabled (disableUnrestrictedNetworkToStorageAccountMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "disableUnrestrictedNetworkToStorageAccountMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Storage -- Storage accounts should restrict network access using virtual network rules
+    //   Microsoft cloud security benchmark: Audit (storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "storageAccountsShouldRestrictNetworkAccessUsingVirtualNetworkRulesMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Storage -- Storage accounts should use customer-managed key for encryption
+    //   Microsoft cloud security benchmark: Disabled (storageAccountsShouldUseCustomerManagedKeyForEncryptionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "storageAccountsShouldUseCustomerManagedKeyForEncryptionMonitoringEffect": "Disabled", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Storage -- Storage accounts should use private link
+    //   Microsoft cloud security benchmark: AuditIfNotExists (storageAccountShouldUseAPrivateLinkConnectionMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "storageAccountShouldUseAPrivateLinkConnectionMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Stream Analytics -- Resource logs in Azure Stream Analytics should be enabled
+    //   Microsoft cloud security benchmark: AuditIfNotExists (diagnosticsLogsInStreamAnalyticsMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "diagnosticsLogsInStreamAnalyticsMonitoringEffect": "AuditIfNotExists", // 'Microsoft cloud security benchmark',
+    "diagnosticsLogsInStreamAnalyticsRetentionDays": "1", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // Update Management Center -- [Preview]: Machines should be configured to periodically check for missing system updates
+    //   Microsoft cloud security benchmark: Audit (systemUpdatesAutoAssessmentModeEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "systemUpdatesAutoAssessmentModeEffect": "Audit", // 'Microsoft cloud security benchmark',
+    // 
+    // -----------------------------------------------------------------------------------------------------------------------------
+    // VM Image Builder -- VM Image Builder templates should use private link
+    //   Microsoft cloud security benchmark: Audit (vmImageBuilderTemplatesShouldUsePrivateLinkMonitoringEffect)
+    // -----------------------------------------------------------------------------------------------------------------------------
+    "vmImageBuilderTemplatesShouldUsePrivateLinkMonitoringEffect": "Audit", // 'Microsoft cloud security benchmark',
+  }
+}

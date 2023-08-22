@@ -1,0 +1,2 @@
+name,displayName,description,exemptionCategory,expiresOn,status,expiresInDays,scope,policyAssignmentId,policyDefinitionReferenceIds,metadata
+8d2fbe53f4c74cc58d83cd5a,Thon DEV Sandbox - Naming convention,why it was excempted,Waiver,,active,n/a,/managementgroups/epac-dev2,/providers/Microsoft.Management/managementGroups/policytest/providers/Microsoft.Authorization/policyAssignments/pr-glob-,,{}

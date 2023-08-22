@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-definition-schema.json",
+  "name": "2cc2cbfc-e306-4ec6-a141-eea3c79bb2a3",
+  "properties": {
+    "policyType": "Custom",
+    "mode": "All",
+    "displayName": "Deny vNet peering creation cross subscription",
+    "description": "This policy denies the creation of vNet Peerings across subscriptions.",
+    "metadata": {
+      "version": "1.0.2",
+      "category": "Sandbox",
+      "source": "https://github.com/Azure/Enterprise-Scale/",
+      "alzCloudEnvironments": [
+        "AzureCloud",
+        "AzureChinaCloud",
+        "AzureUSGovernment"
+      ]
+    },
+    "parameters": {
+      "effect": {
+        "type": "string",
+        "allowedValues": [
+          "Audit", 
+          "Deny", 
+          "Disabled"
+        ],
+        "defaultValue": "Deny",
+          "metadata": {
+            "displayName": "Effect",
+            "description": "Enable or disable the execution of the policy"
+          }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "field": "type",
+        "equals": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings"
+      },
+      "then": { "effect": "[parameters('effect')]" }
+    }
+  }
+}
