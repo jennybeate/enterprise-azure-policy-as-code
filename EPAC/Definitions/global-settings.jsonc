@@ -6,7 +6,7 @@
             "pacSelector": "EPAC-Dev2",
             "cloud": "AzureCloud",
             "tenantId": "ecabee7b-8606-4ae2-9f69-d63203bc23d5",
-            "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/policytest",
+            "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/test",
             "inheritedDefinitionsScopes": [], // [optional] inherited definition scopes used but not managed by this repository, scopes must be visible from deploymentScope
             "desiredState": { // [optional]
                 "strategy": "full", // default full
@@ -33,13 +33,13 @@
     ],
     "managedIdentityLocations": {
         "*": "norwayeast"
-    }//,
-    //"globalNotScopes": {
-        //"*": [
-         //   "/resourceGroupPatterns/excluded-rg*",
-       // ],
+    },
+    "globalNotScopes": {
+        "*": [
+            "/resourceGroupPatterns/NetworkWatcherRG"//,
+       ]//,
         //"tenant": [
-          //  "/providers/Microsoft.Management/managementGroups/policytest"
+          //  "/providers/Microsoft.Management/managementGroups/ecabee7b-8606-4ae2-9f69-d63203bc23d5"
         //]
-    //}
+    }
 }

@@ -4,19 +4,19 @@
   //"parameterFile":"Initiative7-parameters.csv", 
   "definitionEntry": {
       "policySetName": "e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671", //custom Policy managed by EPAC. Use resource id for built in policies. Specifying just the name allows EPAC to inject the correct definition scope.
-       "displayName": "Initiative 7: Deny vNet peering in sandbox" //Not required
+       "displayName": "Sandbox control assignment" //Not required
       }, 
   //"enforcementMode": "Default", //Default or DoNotEnforce. Not required
   "assignment": {
           "name": "sandbox-",
           //"append": true, used when having children (multiple scoped assignments)
-          "displayName": "Sandbox policySet", //is an optional field to document the entry if the Policy name is a GUID. Builtin Policies and Policy Sets use a GUID.
+          "displayName": "Sandbox guardrail policySet", //is an optional field to document the entry if the Policy name is a GUID. Builtin Policies and Policy Sets use a GUID.
           "description": "Policy set that sets guardrails for sandbox. Tags resources for deletion and denies the creation of vNet peerings within the sandbox subscription or in other subscriptions, when deploying from a sandbox scope.",
           "overrides": [ //will be used as there are no specified parameters
             {    
                 "policySetId": "/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671",
                 "kind": "policyEffect",
-                "value": "Disabled",
+                "value": "Audit",
                 "selectors": [
                     {
                         "kind": "policyDefinitionReferenceId",
@@ -28,7 +28,10 @@
                     }
                 ]
             }
-          ]
+          ],
+          "parameters": {
+            "effect":"Audit"
+          }
   },
   "nonComplianceMessages": [
             {
@@ -38,7 +41,7 @@
           
   "scope": {
             "EPAC-Dev2": [
-              "/providers/Microsoft.Management/managementGroups/policytest"
+              "/providers/Microsoft.Management/managementGroups/test"
             ]
           }
 }

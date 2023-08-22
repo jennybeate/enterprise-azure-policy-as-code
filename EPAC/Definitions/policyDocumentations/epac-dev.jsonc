@@ -11,11 +11,11 @@
                 "representativeAssignments": [
                     {
                         "shortName": "general-",
-                        "id": "/providers/Microsoft.Management/managementGroups/policytest/providers/Microsoft.Authorization/policyAssignments/pr-general-"
+                        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-general-"
                     },
                     {
                         "shortName": "vnet-peering-sandbox",
-                        "id": "/providers/Microsoft.Management/managementGroups/policytest/providers/microsoft.authorization/policyassignments/vnet-peering-sandbox"
+                        "id": "/providers/Microsoft.Management/managementGroups/test/providers/microsoft.authorization/policyassignments/vnet-peering-sandbox"
                     }
                 ]
             }
@@ -40,11 +40,11 @@
                     "policySets": [
                         {
                             "shortName": "global-general",
-                            "id": "/providers/Microsoft.Management/managementGroups/policytest/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679"
+                            "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679"
                         },
                         {
                             "shortName": "vnet-peering-sandbox",
-                            "id": "/providers/Microsoft.Management/managementGroups/policytest/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671"
+                            "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671"
                         }
 
                     ],
