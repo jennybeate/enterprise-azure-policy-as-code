@@ -5,19 +5,13 @@
   "definitionEntryList": [
     {
       "policySetName": "e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679",
-      "displayName": "General policySet/initiative for OTG tenant",
+      "displayName": "General policySet/initiative OTG platform",
       "assignment": {
-          "name": "general-",
+          "name": "gen-",
           "append": true,
           "displayName": "Global policyset/initiative for general policies",
-          "description": "General policies for the entire OTG platform",
-          
-          },
-          "nonComplianceMessages": [
-            {
-              "message": "Resources are not compliant."
-            }
-          ]
+          "description": "General policies for the entire OTG platform"
+          }
       
     }
   ],

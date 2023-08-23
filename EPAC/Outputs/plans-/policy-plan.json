@@ -2,20 +2,8 @@
   "assignments": {
     "replace": {},
     "update": {
-      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-general-": {
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-gen-": {
         "overrides": [
-          {
-            "selectors": [
-              {
-                "kind": "policyDefinitionReferenceId",
-                "in": [
-                  "naming-convention"
-                ]
-              }
-            ],
-            "value": "Disabled",
-            "kind": "policyEffect"
-          },
           {
             "selectors": [
               {
@@ -23,6 +11,7 @@
                 "in": [
                   "allowed-locations-resources",
                   "allowed-locations-resource-groups",
+                  "naming-convention",
                   "append-rg-createdDate"
                 ]
               }
@@ -39,25 +28,75 @@
         "description": "Dev environment controls-General policies for the entire OTG platform",
         "identityRequired": false,
         "displayName": "Prod environment controls-Global policyset/initiative for general policies",
-        "nonComplianceMessages": [
-          {
-            "message": "Resources are not compliant."
-          }
-        ],
-        "name": "pr-general-",
+        "name": "pr-gen-",
         "metadata": {
           "pacOwnerId": "11111111-2222-3333-4444-555555555555"
         },
-        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-general-",
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-gen-",
         "scope": "/providers/Microsoft.Management/managementGroups/test",
         "notScopes": [
           "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
         ]
       }
     },
-    "numberOfChanges": 1,
+    "numberOfChanges": 10,
     "numberUnchanged": 1,
-    "delete": {},
+    "delete": {
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/nic-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/nic-policy",
+        "name": "nic-policy"
+      },
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/fdfp-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/fdfp-policy",
+        "name": "fdfp-policy"
+      },
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/stapp-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/stapp-policy",
+        "name": "stapp-policy"
+      },
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/aa-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/aa-policy",
+        "name": "aa-policy"
+      },
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/ippre-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/ippre-policy",
+        "name": "ippre-policy"
+      },
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/fd-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/fd-policy",
+        "name": "fd-policy"
+      },
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/udr-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/udr-policy",
+        "name": "udr-policy"
+      },
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/se-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/se-policy",
+        "name": "se-policy"
+      },
+      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/provs-policy": {
+        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
+        "displayName": null,
+        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/provs-policy",
+        "name": "provs-policy"
+      }
+    },
     "new": {}
   },
   "policySetDefinitions": {
@@ -77,7 +116,7 @@
     "delete": {},
     "new": {}
   },
-  "createdOn": "2023-08-22 06:42:31Z",
+  "createdOn": "2023-08-23 13:02:03Z",
   "exemptions": {
     "numberOfOrphans": 0,
     "replace": {},

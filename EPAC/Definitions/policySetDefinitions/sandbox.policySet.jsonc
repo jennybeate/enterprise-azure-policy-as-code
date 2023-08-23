@@ -18,7 +18,7 @@
                   "Deny",
                   "Disabled"
               ],
-                "defaultValue": "Audit",
+                //"defaultValue": "Audit",
                   "metadata": {
                     "displayName": "Effect",
                     "description": "Enable or disable the execution of the policy"
@@ -39,7 +39,7 @@
             "policyDefinitionReferenceId": "Deny-VNET-Peering",
             "policyDefinitionName": "1cc2cbfc-e306-4ec6-a141-eea3c79bb2a4",
             "parameters": {
-              "Effect": {
+              "effect": {
                 "value": "[parameters('effect')]"
               }
             }
@@ -49,8 +49,8 @@
             "policyDefinitionReferenceId": "append-rg-deleteDate",
             "policyDefinitionName": "9b749cc6-f27e-4416-a661-c237976b5c9b",
             "parameters": {
-              "Effect": {
-                "value": "[parameters('effect')]"
+              "effect": {
+                "value": "Append"
               }
             }
           

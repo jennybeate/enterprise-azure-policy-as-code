@@ -1,48 +1,27 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
-  "nodeName": "/Sandbox/",
-  //"parameterFile":"Initiative7-parameters.csv", 
-  "definitionEntry": {
-      "policySetName": "e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671", //custom Policy managed by EPAC. Use resource id for built in policies. Specifying just the name allows EPAC to inject the correct definition scope.
-       "displayName": "Sandbox control assignment initiative" //Not required
-      }, 
-  //"enforcementMode": "Default", //Default or DoNotEnforce. Not required
+  "nodeName": "Sandbox/",
   "assignment": {
-          "name": "sandbox-",
-          //"append": true, used when having children (multiple scoped assignments)
-          "displayName": "Sandbox guardrail policySet", //is an optional field to document the entry if the Policy name is a GUID. Builtin Policies and Policy Sets use a GUID.
-          "description": "Policy set that sets guardrails for sandbox. Tags resources for deletion and denies the creation of vNet peerings within the sandbox subscription or in other subscriptions, when deploying from a sandbox scope.",
-          "overrides": [ //will be used as there are no specified parameters
-            {    
-                "policySetId": "/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671",
-                "kind": "policyEffect",
-                "value": "Audit",
-                "selectors": [
-                    {
-                        "kind": "policyDefinitionReferenceId",
-                        "in": [
-                            "Deny-VNET-Peer-Cross-Sub",
-                            "Deny-VNET-Peering",
-                            "append-rg-deleteDate"
-                        ]
-                    }
-                ]
-            }
-  ],
+    "name": "san-",
+    //"append": true, used when having children (multiple scoped assignments)
+    "displayName": "Sandbox guardrail policySet/nitiative", //is an optional field to document the entry if the Policy name is a GUID. Builtin Policies and Policy Sets use a GUID.
+    "description": "Policy set that sets guardrails for sandbox. Tags resources for deletion and denies the creation of vNet peerings within the sandbox subscription or in other subscriptions, when deploying from a sandbox scope.",
+  },
+  //"parameterFile":"Initiative7-parameters.csv",
+  "definitionEntry": {
+    "policySetName": "e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671", //custom Policy managed by EPAC. Use resource id for built in policies. Specifying just the name allows EPAC to inject the correct definition scope.
+    "displayName": "Sandbox control assignment initiative" //Not required
+  },
+  //"enforcementMode": "Default", //Default or DoNotEnforce. Not required
   "parameters": {
-        "effect":"Disabled"
-        }      
+    "effect": "Audit"
   },
   "nonComplianceMessages": [
-            {
-              "message": "Creating vNet peering in this scope/subscription is not allowed."
-            }
-          ], 
-          
+    {
+      "message": "Creating vNet peering in this scope/subscription is not allowed."
+    }
+  ],
   "scope": {
-            "EPAC-Dev2": [
-              "/providers/Microsoft.Management/managementGroups/test"
-            ]
-          }
+    "EPAC-Dev2": ["/providers/Microsoft.Management/managementGroups/test"]
+  }
 }
-
