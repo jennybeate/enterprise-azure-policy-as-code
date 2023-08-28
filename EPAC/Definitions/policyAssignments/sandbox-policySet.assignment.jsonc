@@ -4,7 +4,7 @@
   "assignment": {
     "name": "san-",
     //"append": true, used when having children (multiple scoped assignments)
-    "displayName": "Sandbox guardrail policySet/nitiative", //is an optional field to document the entry if the Policy name is a GUID. Builtin Policies and Policy Sets use a GUID.
+    "displayName": "Sandbox guardrail initiative", //is an optional field to document the entry if the Policy name is a GUID. Builtin Policies and Policy Sets use a GUID.
     "description": "Policy set that sets guardrails for sandbox. Tags resources for deletion and denies the creation of vNet peerings within the sandbox subscription or in other subscriptions, when deploying from a sandbox scope.",
   },
   //"parameterFile":"Initiative7-parameters.csv",

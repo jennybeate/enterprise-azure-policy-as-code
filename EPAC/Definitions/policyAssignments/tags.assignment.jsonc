@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
+  "nodeName": "Tags/",
+  "assignment": {
+    "name": "tag-",
+    "append": true, 
+    "displayName": "Tag", //is an optional field to document the entry if the Policy name is a GUID. Builtin Policies and Policy Sets use a GUID.
+    "description": "Policies for tagging."
+  },
+  "definitionEntryList": [
+    {
+        
+      "policyName": "7ce92201-8036-4d55-938e-0dce0a5bc475", //custom Policy managed by EPAC. Use resource id for built in policies. Specifying just the name allows EPAC to inject the correct definition scope.
+      "displayName": "Requirement",
+      "assignment": {
+        "name": "req-",
+        "displayName": "Require -",
+        "description": "Require Tag for Resource Groups when any resource group (not listed in in excludedRg) is created or updated - "
+      },
+      "nonComplianceMessages": [
+        {
+          "message": "The tags of the resource group you are deploying (to) are not in compliance to values required by policy; environment, owner, costCenter, createdBy, location."
+        }
+      ]
+      
+    },
+    {
+      "policyName": "9ea02ca2-71db-412d-8b00-7c7ca9fcd32d", 
+      "displayName": "Inherit from resource group -",
+      "assignment": {
+        "name": "inh",
+        "displayName": "Inherit Tag from Resource Group - ",
+        "description": "Modify Tag to comply with governance goal of enforcing Tags by inheriting Tags from resource group -  "
+      },
+      "nonComplianceMessages": [
+        {
+          "message": "Deployment should not be prevented by policy. Please contact support. Tag inheritance from resource group was not successful. "
+        }
+      ]
+    }
+    
+  ],
+  
+  "scope": {
+    "EPAC-Dev2": ["/providers/Microsoft.Management/managementGroups/test"]
+  },
+  //"enforcementMode": "Default" or DoNotEnforce. Not required,
+  "children": [
+    {
+      "nodeName": "owner/",
+      "assignment": {
+        "name": "owner tag",
+        "displayName": "- owner",
+        "description": " owner"
+      },
+      "parameters": {
+        "tagName": "owner"
+      }
+    },
+    {
+        "nodeName": "environment/",
+        "assignment": {
+          "name": "environment tag",
+          "displayName": "- environment",
+          "description": " environment"
+        },
+        "parameters": {
+          "tagName": "environment"
+        }
+      },
+      {
+        "nodeName": "location/",
+        "assignment": {
+          "name": "location tag",
+          "displayName": "- location",
+          "description": " location"
+        },
+        "parameters": {
+          "tagName": "location"
+        }
+      },
+      {
+        "nodeName": "createdBy/",
+        "assignment": {
+          "name": "createdBy",
+          "displayName": "- createdBy",
+          "description": " createdBy"
+        },
+        "parameters": {
+          "tagName": "createdBy"
+        }
+      },
+      {
+        "nodeName": "costCenter/",
+        "assignment": {
+          "name": "costCenter tag",
+          "displayName": "- costCenter",
+          "description": " costCenter"
+        },
+        "parameters": {
+          "tagName": "location"
+        }
+      }
+    
+  ]
+}

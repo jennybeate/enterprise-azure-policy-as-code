@@ -1,129 +1,308 @@
 {
+  "policyDefinitions": {
+    "replace": {},
+    "numberUnchanged": 6,
+    "update": {},
+    "delete": {},
+    "new": {},
+    "numberOfChanges": 0
+  },
+  "createdOn": "2023-08-28 11:57:41Z",
   "assignments": {
     "replace": {},
+    "numberUnchanged": 2,
     "update": {
-      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-gen-": {
-        "overrides": [
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-owner tag": {
+        "nonComplianceMessages": [
           {
-            "selectors": [
-              {
-                "kind": "policyDefinitionReferenceId",
-                "in": [
-                  "allowed-locations-resources",
-                  "allowed-locations-resource-groups",
-                  "naming-convention",
-                  "append-rg-createdDate"
-                ]
-              }
-            ],
-            "value": "Audit",
-            "kind": "policyEffect"
+            "message": "The tags of the resource group you are deploying (to) are not in compliance to values required by policy; environment, owner, costCenter, createdBy, location."
           }
         ],
-        "enforcementMode": "Default",
-        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679",
-        "identity": {
-          "type": "None"
-        },
-        "description": "Dev environment controls-General policies for the entire OTG platform",
-        "identityRequired": false,
-        "displayName": "Prod environment controls-Global policyset/initiative for general policies",
-        "name": "pr-gen-",
+        "name": "req-tag-owner tag",
         "metadata": {
           "pacOwnerId": "11111111-2222-3333-4444-555555555555"
         },
-        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-gen-",
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyDefinitions/7ce92201-8036-4d55-938e-0dce0a5bc475",
+        "displayName": "Require - Tag- owner",
+        "description": "Require Tag for Resource Groups when any resource group (not listed in in excludedRg) is created or updated - Policies for tagging. owner",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "owner"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-owner tag",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-costCenter tag": {
+        "nonComplianceMessages": [
+          {
+            "message": "Deployment should not be prevented by policy. Please contact support. Tag inheritance from resource group was not successful. "
+          }
+        ],
+        "name": "inhtag-costCenter tag",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9ea02ca2-71db-412d-8b00-7c7ca9fcd32d",
+        "displayName": "Inherit Tag from Resource Group - Tag- costCenter",
+        "description": "Modify Tag to comply with governance goal of enforcing Tags by inheriting Tags from resource group -  Policies for tagging. costCenter",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "location"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-costCenter tag",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-location tag": {
+        "nonComplianceMessages": [
+          {
+            "message": "Deployment should not be prevented by policy. Please contact support. Tag inheritance from resource group was not successful. "
+          }
+        ],
+        "name": "inhtag-location tag",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9ea02ca2-71db-412d-8b00-7c7ca9fcd32d",
+        "displayName": "Inherit Tag from Resource Group - Tag- location",
+        "description": "Modify Tag to comply with governance goal of enforcing Tags by inheriting Tags from resource group -  Policies for tagging. location",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "location"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-location tag",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-environment tag": {
+        "nonComplianceMessages": [
+          {
+            "message": "The tags of the resource group you are deploying (to) are not in compliance to values required by policy; environment, owner, costCenter, createdBy, location."
+          }
+        ],
+        "name": "req-tag-environment tag",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyDefinitions/7ce92201-8036-4d55-938e-0dce0a5bc475",
+        "displayName": "Require - Tag- environment",
+        "description": "Require Tag for Resource Groups when any resource group (not listed in in excludedRg) is created or updated - Policies for tagging. environment",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "environment"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-environment tag",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-location tag": {
+        "nonComplianceMessages": [
+          {
+            "message": "The tags of the resource group you are deploying (to) are not in compliance to values required by policy; environment, owner, costCenter, createdBy, location."
+          }
+        ],
+        "name": "req-tag-location tag",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyDefinitions/7ce92201-8036-4d55-938e-0dce0a5bc475",
+        "displayName": "Require - Tag- location",
+        "description": "Require Tag for Resource Groups when any resource group (not listed in in excludedRg) is created or updated - Policies for tagging. location",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "location"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-location tag",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-createdBy": {
+        "nonComplianceMessages": [
+          {
+            "message": "The tags of the resource group you are deploying (to) are not in compliance to values required by policy; environment, owner, costCenter, createdBy, location."
+          }
+        ],
+        "name": "req-tag-createdBy",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyDefinitions/7ce92201-8036-4d55-938e-0dce0a5bc475",
+        "displayName": "Require - Tag- createdBy",
+        "description": "Require Tag for Resource Groups when any resource group (not listed in in excludedRg) is created or updated - Policies for tagging. createdBy",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "createdBy"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-createdBy",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-costCenter tag": {
+        "nonComplianceMessages": [
+          {
+            "message": "The tags of the resource group you are deploying (to) are not in compliance to values required by policy; environment, owner, costCenter, createdBy, location."
+          }
+        ],
+        "name": "req-tag-costCenter tag",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyDefinitions/7ce92201-8036-4d55-938e-0dce0a5bc475",
+        "displayName": "Require - Tag- costCenter",
+        "description": "Require Tag for Resource Groups when any resource group (not listed in in excludedRg) is created or updated - Policies for tagging. costCenter",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "location"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/req-tag-costCenter tag",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-owner tag": {
+        "nonComplianceMessages": [
+          {
+            "message": "Deployment should not be prevented by policy. Please contact support. Tag inheritance from resource group was not successful. "
+          }
+        ],
+        "name": "inhtag-owner tag",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9ea02ca2-71db-412d-8b00-7c7ca9fcd32d",
+        "displayName": "Inherit Tag from Resource Group - Tag- owner",
+        "description": "Modify Tag to comply with governance goal of enforcing Tags by inheriting Tags from resource group -  Policies for tagging. owner",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "owner"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-owner tag",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-createdBy": {
+        "nonComplianceMessages": [
+          {
+            "message": "Deployment should not be prevented by policy. Please contact support. Tag inheritance from resource group was not successful. "
+          }
+        ],
+        "name": "inhtag-createdBy",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9ea02ca2-71db-412d-8b00-7c7ca9fcd32d",
+        "displayName": "Inherit Tag from Resource Group - Tag- createdBy",
+        "description": "Modify Tag to comply with governance goal of enforcing Tags by inheriting Tags from resource group -  Policies for tagging. createdBy",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "createdBy"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-createdBy",
+        "scope": "/providers/Microsoft.Management/managementGroups/test",
+        "notScopes": [
+          "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
+        ]
+      },
+      "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-environment tag": {
+        "nonComplianceMessages": [
+          {
+            "message": "Deployment should not be prevented by policy. Please contact support. Tag inheritance from resource group was not successful. "
+          }
+        ],
+        "name": "inhtag-environment tag",
+        "metadata": {
+          "pacOwnerId": "11111111-2222-3333-4444-555555555555"
+        },
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9ea02ca2-71db-412d-8b00-7c7ca9fcd32d",
+        "displayName": "Inherit Tag from Resource Group - Tag- environment",
+        "description": "Modify Tag to comply with governance goal of enforcing Tags by inheriting Tags from resource group -  Policies for tagging. environment",
+        "identity": {
+          "type": "None"
+        },
+        "parameters": {
+          "tagName": "environment"
+        },
+        "enforcementMode": "Default",
+        "identityRequired": false,
+        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/inhtag-environment tag",
         "scope": "/providers/Microsoft.Management/managementGroups/test",
         "notScopes": [
           "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/resourceGroups/NetworkWatcherRG"
         ]
       }
     },
-    "numberOfChanges": 10,
-    "numberUnchanged": 1,
-    "delete": {
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/nic-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/nic-policy",
-        "name": "nic-policy"
-      },
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/fdfp-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/fdfp-policy",
-        "name": "fdfp-policy"
-      },
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/stapp-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/stapp-policy",
-        "name": "stapp-policy"
-      },
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/aa-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/aa-policy",
-        "name": "aa-policy"
-      },
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/ippre-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/ippre-policy",
-        "name": "ippre-policy"
-      },
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/fd-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/fd-policy",
-        "name": "fd-policy"
-      },
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/udr-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/udr-policy",
-        "name": "udr-policy"
-      },
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/se-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/se-policy",
-        "name": "se-policy"
-      },
-      "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/provs-policy": {
-        "scopeId": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23",
-        "displayName": null,
-        "id": "/subscriptions/6330d75b-fd04-4421-9aeb-a521847d4b23/providers/Microsoft.Authorization/policyAssignments/provs-policy",
-        "name": "provs-policy"
-      }
-    },
-    "new": {}
+    "delete": {},
+    "new": {},
+    "numberOfChanges": 10
   },
   "policySetDefinitions": {
     "replace": {},
-    "update": {},
-    "numberOfChanges": 0,
     "numberUnchanged": 2,
-    "delete": {},
-    "new": {}
-  },
-  "pacOwnerId": "11111111-2222-3333-4444-555555555555",
-  "policyDefinitions": {
-    "replace": {},
     "update": {},
-    "numberOfChanges": 0,
-    "numberUnchanged": 5,
     "delete": {},
-    "new": {}
-  },
-  "createdOn": "2023-08-23 13:02:03Z",
-  "exemptions": {
-    "numberOfOrphans": 0,
-    "replace": {},
     "new": {},
-    "numberOfChanges": 0,
+    "numberOfChanges": 0
+  },
+  "exemptions": {
+    "replace": {},
     "numberUnchanged": 0,
+    "numberOfChanges": 0,
+    "delete": {},
     "update": {},
-    "delete": {}
-  }
+    "numberOfOrphans": 0,
+    "new": {}
+  },
+  "pacOwnerId": "11111111-2222-3333-4444-555555555555"
 }

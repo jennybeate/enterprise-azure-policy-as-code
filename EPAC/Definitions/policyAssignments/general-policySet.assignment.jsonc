@@ -1,15 +1,15 @@
 {
   "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
-  "nodeName": "/Global/",
+  "nodeName": "/General/",
   "parameterFile": "general-policySet.parameters.csv",
   "definitionEntryList": [
     {
       "policySetName": "e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679",
-      "displayName": "General policySet/initiative OTG platform",
+      "displayName": "General initiative OTG platform",
       "assignment": {
           "name": "gen-",
           "append": true,
-          "displayName": "Global policyset/initiative for general policies",
+          "displayName": "General initiative",
           "description": "General policies for the entire OTG platform"
           }
       
@@ -20,8 +20,8 @@
       "nodeName": "Prod/",    
       "assignment": {
         "name": "pr-",
-        "displayName": "Prod environment controls-",
-        "description": "Dev environment controls-"
+        "displayName": "Prod environment controls - ",
+        "description": "Production environment controls - "
 
       },
       "parameterSelector": "prod",

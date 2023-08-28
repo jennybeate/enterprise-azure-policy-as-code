@@ -2,19 +2,19 @@
   "parameters": {
     // 
     // -----------------------------------------------------------------------------------------------------------------------------
-    // Sandbox -- append-rg-deleteDate
-    //   Sandbox initiative: Disabled (effect)
+    // General -- Enforce naming convention
+    //   Global initiative general: Deny (effect)
     // -----------------------------------------------------------------------------------------------------------------------------
+    // No-default: ("effect": "++ no default ++", // 'Global initiative general')
     // 
     // -----------------------------------------------------------------------------------------------------------------------------
     // Sandbox -- Deny vNet peer creation
-    //   Sandbox initiative: Disabled (effect)
+    //   Sandbox initiative: Deny (effect)
     // -----------------------------------------------------------------------------------------------------------------------------
     // 
     // -----------------------------------------------------------------------------------------------------------------------------
     // Sandbox -- Deny vNet peering creation cross subscription
-    //   Sandbox initiative: Disabled (effect)
+    //   Sandbox initiative: Deny (effect)
     // -----------------------------------------------------------------------------------------------------------------------------
-    "effect": "Disabled", // 'Sandbox initiative',
   }
 }

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-set-definition-schema.json",
+  "name": "e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679",
+  "type": "Microsoft.Authorization/policySetDefinitions",
+  "properties": {
+    "displayName": "General initiative",
+    "description": "This initiative contains the general policies valid to the entire OTG platform, such as naming and tagging conventions and limits for Azure region deployments.",
+    "metadata": {
+      "version": "1.0.0",
+      "category": "General"
+    },
+    "parameters": {
+      "AllowedLocations": {
+        "type": "Array",
+        "defaultValue": ["westeurope", "norwayeast"]
+      },
+      "effect": {
+        "type": "string",
+        "allowedValues": ["Audit", "Deny", "Disabled"],
+        //"defaultValue": "Audit",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        }
+      }
+    },
+    "policyDefinitions": [
+      {
+        "policyDefinitionReferenceId": "allowed-locations-resources",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+        "parameters": {
+          "listOfAllowedLocations": {
+            "value": "[parameters('AllowedLocations')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "allowed-locations-resource-groups",
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+        "parameters": {
+          "listOfAllowedLocations": {
+            "value": "[parameters('AllowedLocations')]"
+          }
+        }
+      },
+ ///Custom definitions referenced using Name, not id. Requirement er valgt som custom og ikke builtin, da builtin krever spesifikke verdier. 
+      {
+        "policyDefinitionReferenceId": "naming-convention",
+        "policyDefinitionName": "2076e19d-45f9-4564-a459-bb5a0aeaff85",
+        "parameters": {
+          "effect": {
+            "value": "[parameters('effect')]"
+          }
+        }
+      },
+      {
+        "policyDefinitionReferenceId": "append-rg-createdDate",
+        "policyDefinitionName": "b2145d82-fa30-4da0-9ea3-f0331cee579e",
+        "parameters": {
+          "effect": {
+            "value": "Append"
+          }
+        }
+      }
+    ]
+  }
+}

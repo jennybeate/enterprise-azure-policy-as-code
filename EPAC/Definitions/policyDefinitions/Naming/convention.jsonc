@@ -1954,38 +1954,6 @@
             {
               "allOf": [
                 {
-                  "equals": "Microsoft.ContainerInstance/containerGroups",
-                  "field": "type"
-                },
-                {
-                  "notLike": "ci-tst-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "ci-cor-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "ci-prd-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "ci-stg-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "ci-dev-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "ci-uat-*",
-                  "field": "name"
-                }
-              ]
-            },
-            {
-              "allOf": [
-                {
                   "equals": "Microsoft.ServiceFabric/clusters",
                   "field": "type"
                 },
@@ -2336,11 +2304,8 @@
                 {
                   "notLike": "sdb-cor-*",
                   "field": "name"
-                },
-                {
-                  "notLike": "sdb-sbx-*",
-                  "field": "name"
                 }
+                
               ]
             },
             {
@@ -4583,38 +4548,7 @@
                 }
               ]
             },
-            {
-              "allOf": [
-                {
-                  "equals": "Microsoft.Network/networkWatchers",
-                  "field": "type"
-                },
-                {
-                  "notLike": "nw-tst-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "nw-cor-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "nw-prd-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "nw-stg-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "nw-dev-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "nw-uat-*",
-                  "field": "name"
-                }
-              ]
-            },
+            
             {
               "allOf": [
                 {
@@ -4903,38 +4837,7 @@
                 }
               ]
             },
-            {
-              "allOf": [
-                {
-                  "equals": "Microsoft.Network/routeTables/routes",
-                  "field": "type"
-                },
-                {
-                  "notLike": "udr-tst-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "udr-cor-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "udr-prd-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "udr-stg-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "udr-dev-*",
-                  "field": "name"
-                },
-                {
-                  "notLike": "udr-uat-*",
-                  "field": "name"
-                }
-              ]
-            },
+            
             {
               "allOf": [
                 {
