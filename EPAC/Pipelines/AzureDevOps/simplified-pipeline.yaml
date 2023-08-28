@@ -4,8 +4,8 @@ trigger: none
 
 variables:
   PAC_OUTPUT_FOLDER: ./Output
-  environment: contoso # Specify the PAC environment here
-  serviceConnection: example-service-connection # This is the name of the service connection which has permission in Azure
+  environment: epac-dev2 # Specify the PAC environment here
+  serviceConnection: Nimtech-Test (6330d75b-fd04-4421-9aeb-a521847d4b23) # This is the name of the service connection which has permission in Azure
 
 pool:
   vmImage: "windows-latest"
