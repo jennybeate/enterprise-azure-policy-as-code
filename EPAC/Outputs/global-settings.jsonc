@@ -5,8 +5,8 @@
         {
             "pacSelector": "EPAC-Dev2",
             "cloud": "AzureCloud",
-            "tenantId": "ecabee7b-8606-4ae2-9f69-d63203bc23d5",
-            "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/test",
+            "tenantId": "d027b1fe-9231-4605-b90e-e930bc359715",
+            "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/cf514692-4116-41cb-a9de-01311e445f81",
             "inheritedDefinitionsScopes": [], // [optional] inherited definition scopes used but not managed by this repository, scopes must be visible from deploymentScope
             "desiredState": { // [optional]
                 "strategy": "ownedOnly", // default full
@@ -36,7 +36,8 @@
     },
     "globalNotScopes": {
         "*": [
-            "/resourceGroupPatterns/NetworkWatcherRG"//,
+            "/resourceGroupPatterns/NetworkWatcherRG",
+            "rsg-sbx-offerhub-web"//,
        ]//,
         //"tenant": [
           //  "/providers/Microsoft.Management/managementGroups/ecabee7b-8606-4ae2-9f69-d63203bc23d5"

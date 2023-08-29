@@ -22,6 +22,6 @@
     }
   ],
   "scope": {
-    "EPAC-Dev2": ["/providers/Microsoft.Management/managementGroups/test"]
+    "EPAC-Dev2": ["/providers/Microsoft.Management/managementGroups/cf514692-4116-41cb-a9de-01311e445f81"]
   }
 }

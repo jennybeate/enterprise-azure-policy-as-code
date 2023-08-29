@@ -27,7 +27,7 @@
       "parameterSelector": "prod",
       "scope": {
         "Epac-Dev2": [
-          "/providers/Microsoft.Management/managementGroups/test"
+          "/providers/Microsoft.Management/managementGroups/cf514692-4116-41cb-a9de-01311e445f81"
         ]
       }
     }

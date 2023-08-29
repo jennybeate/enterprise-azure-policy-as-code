@@ -4,18 +4,18 @@
         "environmentCategories": [
             {
                 "pacEnvironment": "EPAC-Dev2",
-                "environmentCategory": "prod",
+                "environmentCategory": "sandbox",
                 "scopes": [
-                    "Management Group: EPAC-Dev2"
+                    "Management Group: cf514692-4116-41cb-a9de-01311e445f81"
                 ],
                 "representativeAssignments": [
                     {
                         "shortName": "prod-gen-",
-                        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/prod-gen-"
+                        "id": "/providers/Microsoft.Management/managementGroups/cf514692-4116-41cb-a9de-01311e445f81/providers/Microsoft.Authorization/policyAssignments/prod-gen-"
                     },
                     {
                         "shortName": "san-",
-                        "id": "/providers/Microsoft.Management/managementGroups/test/providers/microsoft.authorization/policyassignments/san-"
+                        "id": "/providers/Microsoft.Management/managementGroups/cf514692-4116-41cb-a9de-01311e445f81/providers/microsoft.authorization/policyassignments/san-"
                     }
                 ]
             }
@@ -26,7 +26,7 @@
 
                 "fileNameStem": "epac2-policy-effects-across-environments",
                 "environmentCategories": [
-                    "prod"
+                    "sandbox"
                 ],
                 "title": "Epac2 Policy effects"
             }]
@@ -40,16 +40,16 @@
                     "policySets": [
                         {
                             "shortName": "general-initiative",
-                            "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679"
+                            "id": "/providers/Microsoft.Management/managementGroups/cf514692-4116-41cb-a9de-01311e445f81/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679"
                         },
                         {
                             "shortName": "sandbox-initiative",
-                            "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671"
+                            "id": "/providers/Microsoft.Management/managementGroups/cf514692-4116-41cb-a9de-01311e445f81/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671"
                         }
 
                     ],
                     "environmentColumnsInCsv": [
-                        "prod"
+                        "sandbox"
                     ]
                 }
             ]
