@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/enterprise-azure-policy-as-code/main/Schemas/policy-assignment-schema.json",
+    "nodeName": "Security/",
+    "assignment": {
+      "name": "sec-",
+      "append": true, 
+      "displayName": "Security", //is an optional field to document the entry if the Policy name is a GUID. Builtin Policies and Policy Sets use a GUID.
+      "description": "Policies for security."
+    },
+    "definitionEntryList": [
+      {
+          
+        "policyId": "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9", //custom Policy managed by EPAC. Use resource id for built in policies. Specifying just the name allows EPAC to inject the correct definition scope.
+        "displayName": "Security",
+        "assignment": {
+          "name": "sec-",
+          "displayName": "Audit -",
+          "description": "Secure transfer to storage accounts should be enabled - "
+        },
+        "nonComplianceMessages": [
+          {
+            "message": "Secure transfer to storage accounts should be enabled"
+          }
+        ]
+        
+      }
+      ],
+      "scope": {
+    "EPAC-Dev2": ["/providers/Microsoft.Management/managementGroups/test"]
+  }
+}
