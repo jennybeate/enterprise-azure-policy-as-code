@@ -10,12 +10,12 @@
                 ],
                 "representativeAssignments": [
                     {
-                        "shortName": "general-",
-                        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/pr-general-"
+                        "shortName": "prod-gen-",
+                        "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policyAssignments/prod-gen-"
                     },
                     {
-                        "shortName": "vnet-peering-sandbox",
-                        "id": "/providers/Microsoft.Management/managementGroups/test/providers/microsoft.authorization/policyassignments/vnet-peering-sandbox"
+                        "shortName": "san-",
+                        "id": "/providers/Microsoft.Management/managementGroups/test/providers/microsoft.authorization/policyassignments/san-"
                     }
                 ]
             }
@@ -39,11 +39,11 @@
                     "title": "Document Initiatives",
                     "policySets": [
                         {
-                            "shortName": "global-general",
+                            "shortName": "general-initiative",
                             "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c679"
                         },
                         {
-                            "shortName": "vnet-peering-sandbox",
+                            "shortName": "sandbox-initiative",
                             "id": "/providers/Microsoft.Management/managementGroups/test/providers/Microsoft.Authorization/policySetDefinitions/e14e5d7c-9551-4ae3-b8fa-b5d6b9b3c671"
                         }
 

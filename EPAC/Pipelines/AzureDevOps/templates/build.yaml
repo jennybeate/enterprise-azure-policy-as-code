@@ -3,8 +3,10 @@ parameters:
     type: string
   - name: pacEnvironment
     type: string
+    default: epac-dev2
   - name: definitionsRootFolder
     type: string
+    default: ./EPAC/Outputs
 
 steps:
   - checkout: self

@@ -3,9 +3,9 @@
 trigger: none
 
 variables:
-  PAC_OUTPUT_FOLDER: ./Output
-  environment: epac-dev2 # Specify the PAC environment here
-  serviceConnection: Nimtech-Test (6330d75b-fd04-4421-9aeb-a521847d4b23) # This is the name of the service connection which has permission in Azure
+  PAC_OUTPUT_FOLDER: 'EPAC/Outputs'
+  environment: 'epac-dev2' # Specify the PAC environment here
+  serviceConnection: 'Nimtech-Test (6330d75b-fd04-4421-9aeb-a521847d4b23)' # This is the name of the service connection which has permission in Azure
 
 pool:
   vmImage: "windows-latest"
@@ -20,6 +20,7 @@ stages:
             parameters:
               serviceConnection: $(serviceConnection)
               pacEnvironment: $(environment)
+              definitionsRootFolder: $(PAC_OUTPUT_FOLDER)
   - stage: DeployPolicy
     displayName: Deploy Policy Changes
     condition: eq(dependencies.Plan.outputs['Plan.Plan.deployPolicyChanges'], 'yes')

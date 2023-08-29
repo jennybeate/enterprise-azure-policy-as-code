@@ -5,7 +5,7 @@ parameters:
     type: string
   - name: definitionsRootFolder
     type: string
-    default: Definitions
+    default: ./EPAC/Outputs
 
 steps:
   - checkout: self

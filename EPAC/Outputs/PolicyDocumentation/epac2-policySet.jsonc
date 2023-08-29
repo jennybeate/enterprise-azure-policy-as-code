@@ -3,9 +3,9 @@
     // 
     // -----------------------------------------------------------------------------------------------------------------------------
     // General -- Enforce naming convention
-    //   Global initiative general: Deny (effect)
+    //   General initiative: Deny (effect)
     // -----------------------------------------------------------------------------------------------------------------------------
-    // No-default: ("effect": "++ no default ++", // 'Global initiative general')
+    // No-default: ("effect": "++ no default ++", // 'General initiative')
     // 
     // -----------------------------------------------------------------------------------------------------------------------------
     // Sandbox -- Deny vNet peer creation

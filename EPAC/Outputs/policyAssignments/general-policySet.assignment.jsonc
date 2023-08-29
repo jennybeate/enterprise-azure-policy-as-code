@@ -10,7 +10,7 @@
           "name": "gen-",
           "append": true,
           "displayName": "General initiative",
-          "description": "General policies for the entire OTG platform"
+          "description": "General policies for the entire OTG platform."
           }
       
     }
@@ -19,7 +19,7 @@
     {
       "nodeName": "Prod/",    
       "assignment": {
-        "name": "pr-",
+        "name": "prod-",
         "displayName": "Prod environment controls - ",
         "description": "Production environment controls - "
 
