@@ -9,7 +9,7 @@
             "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/test",
             "inheritedDefinitionsScopes": [], // [optional] inherited definition scopes used but not managed by this repository, scopes must be visible from deploymentScope
             "desiredState": { // [optional]
-                "strategy": "full", // default full
+                "strategy": "ownedOnly", // default full
                 // full      = delete any unknown assignments and Policy/Set definitions in managed scope not containing metadata.pacOwnerId
                 // ownedOnly = delete only our own assignments as indicated by metadata.pacOwnerId field
                 "includeResourceGroups": false,
